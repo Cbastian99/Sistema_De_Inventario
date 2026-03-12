@@ -46,7 +46,7 @@ while True:
                 )
 
     elif opcion == "3":
-        
+        print("Calcular estadísticas seleccionado")
 
     elif opcion == "4":
         print("Saliendo del sistema...")
