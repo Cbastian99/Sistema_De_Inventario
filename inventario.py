@@ -20,13 +20,13 @@ while True:
         precio = float(input("Ingrese el precio: "))
         cantidad = int(input("Ingrese la cantidad: "))
 
-        productos = {
-            "nombres": nombre,
-            "precios": precio,
-            "cantidades": cantidad
+        producto = {
+            "nombre": nombre,
+            "precio": precio,
+            "cantidad": cantidad
         }
 
-        inventario.append(productos)
+        inventario.append(producto)
 
         print("Producto agregado correctamente.")
 
@@ -40,9 +40,9 @@ while True:
         
             for producto in inventario:
                 print(
-                    "Producto:", productos["nombre"],
-                    "| Precio:", productos["precio"],
-                    "| Cantidad:", cantidad["cantidad"]
+                    "Producto:", producto["nombre"],
+                    "| Precio:", producto["precio"],
+                    "| Cantidad:", producto["cantidad"]
                 )
 
     elif opcion == "3":
