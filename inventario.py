@@ -41,7 +41,7 @@ while True:
             for producto in inventario:
                 print(
                     "Producto:", producto["nombre"],
-                    "| Precio:", producto["precio"],
+                    "| Precio:", producto["precio"]0f.,
                     "| Cantidad:", producto["cantidad"]
                 )
 
