@@ -16,13 +16,22 @@ def agregar_producto():
     precio = float(input("Ingrese el precio: $"))
     cantidad = int(input("Ingrese la cantidad: "))
 
-    producto = {
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+
+        nombre = input("Ingrese el nombre del producto: ")
+
+        precio = float(input("Ingrese el precio: "))
+        cantidad = int(input("Ingrese la cantidad: "))
+
+        producto = {
             "nombre": nombre,
             "precio": precio,
             "cantidad": cantidad
         }
 
-    inventario.append(producto)
+        inventario.append(producto)
 
     print("Producto agregado correctamente.".upper())
 
@@ -94,7 +103,14 @@ while True:
             break
 
         else:
-            print("Ingrese una opcion valida.")
+            print("\n--- INVENTARIO ---") 
+        
+            for producto in inventario:
+                print(
+                    "Producto:", producto["nombre"],
+                    "| Precio:", producto["precio"]0f.,
+                    "| Cantidad:", producto["cantidad"]
+                )
 
 
 # Resumen de la semana
