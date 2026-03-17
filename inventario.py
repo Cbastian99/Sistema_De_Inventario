@@ -103,14 +103,9 @@ while True:
             break
 
         else:
-            print("\n--- INVENTARIO ---") 
-        
-            for producto in inventario:
-                print(
-                    "Producto:", producto["nombre"],
-                    "| Precio:", producto["precio"]0f.,
-                    "| Cantidad:", producto["cantidad"]
-                )
+             pritn("Escoja una opcion valida")
+            
+            
 
 
 # Resumen de la semana
